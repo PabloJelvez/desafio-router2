@@ -11,7 +11,6 @@ const Pokemones = () => {
     const getData = async () => {
         const res = await fetch(url);
         const {results} = await res.json();
-        console.log(res.results)
         setPokemones(results);
     }
 
@@ -29,7 +28,7 @@ const Pokemones = () => {
             <h1>
                 Selecciona un pokemón
             </h1>
-          <div>
+          <div className="w-50 mx-auto">
             <select
              id="selectPokemon"
              value={pokemonSelect}

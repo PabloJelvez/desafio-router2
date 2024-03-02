@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom"
 import Nav from "./components/Nav"
 import Home from "./views/Home"
 import Pokemones from "./views/Pokemones";
+import Details from "./components/Details";
 
 
 const  App = () => {
@@ -18,6 +19,10 @@ const  App = () => {
         <Route
         path="/pokemones"
         element={<Pokemones />} />
+        <Route
+        path="/pokemones/:name"
+        element={<Details />}
+        />
 
       </Routes>
 
